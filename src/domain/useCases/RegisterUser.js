@@ -27,7 +27,9 @@ export class RegisterUser {
         const passwordData = await this.passwordHasher.hash(user.password);
         debugger;
         const userData = new User ({
+            institucion: user.institucion,
             name: user.name,
+            genero: user.genero,
             email: user.email,
             passwordHash: passwordData
 
