@@ -147,12 +147,18 @@ export function showLoginView(container, presenter) {
  *
  * @param {string} message
  */
-export function showLoginMessage(message) {
+export function showLoginMessage(message, alert="success") {
 
     const messageElement =
         document.getElementById("login-message");
 
     if (messageElement) {
-        messageElement.textContent = message;
+        messageElement.innerHTML=`
+        <div class="alert alert-warning" role="alert">
+         ${message}
+        </div>
+        
+        `
+      
     }
 }
