@@ -14,6 +14,7 @@ import { showRegisterView } from "../views/registerView.js";
 import { RegisterPresenter } from "./registerPresenter.js";
 import { showClassView } from "../views/classView.js";
 import { showHome } from "../views/home.js";
+import { showArqui} from "../arqui.js"
 
 export class LoginPresenter {
 
